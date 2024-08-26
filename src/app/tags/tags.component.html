@@ -1,0 +1,11 @@
+<div *ngIf="tags" [style.justifyContent]="'center'">
+    <a *ngFor="let tag of tags" class="tag-link" (click)="selectTag(tag.name)">
+      {{ tag.name }} {{ tag.count }}
+    </a>
+  </div>
+  <div *ngIf="foodPageTags">
+    <a *ngFor="let tag of foodPageTags" class="tag-link" (click)="selectTag(tag.name)">
+      {{ tag.name }} ({{ (tag.count )}})
+    </a>
+  </div>
+  
