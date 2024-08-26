@@ -1,11 +1,30 @@
-header{
-    background: white;
+header {
+    position: relative;
     padding: 0;
-    border-bottom: solid#e88d8d;
-    }
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+    height: 9rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    overflow: hidden; /* Ensure the pseudo-element stays within the header */
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20240103/pngtree-maroon-background-with-red-vegetables-creating-a-seamless-kitchen-texture-image_13783403.png");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(80%); /* Adjust the brightness (0% to 100%) */
+    z-index: -1; /* Place it behind the content */
+}
     
     a{
-        color:#cb5b5b;
+        color:#ffffff;
+        height:5rem;
        
     }
     .logo {
@@ -19,8 +38,10 @@ header{
       
     
     a:hover{
-        background: #f4d8d8;
+        background: #f41362;
         color: white;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
     .container{
         margin: 0 auto;

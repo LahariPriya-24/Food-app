@@ -5,14 +5,14 @@ ul{
     flex-wrap:wrap;
     list-style-type:none;
     padding: 0;
-    background-color: #fffade;
+    background-color:antiquewhite;
     text-decoration: none;
 
 }
 ul li a{
     height: 20rem;
     width:19rem;
-    border: 1px solid whitesmoke;
+    border: 3px solid rgb(228, 148, 179);
     border-radius: 1rem;
     margin:0.5 rem;
     display:flex;

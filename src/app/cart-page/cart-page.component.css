@@ -3,6 +3,8 @@
     flex-wrap:wrap;
     align-items:flex-wrap;
     margin:1.5rem;
+    background-color: antiquewhite;
+    border-radius: 2rem;
 }
 ul{
     display:flex;
@@ -88,4 +90,13 @@ ul.remove-button:hover{
 .checkout.total-price::before{
     content: 'Price: ';
     color: grey;
+}
+div button.btn.btn-outline-danger {
+    background-color: rgb(126, 15, 59);
+    color:antiquewhite;
+    height:3rem;
+    width:7rem;
+    border-radius:10px;
+    outline-color: antiquewhite;
+    cursor: pointer;
 }

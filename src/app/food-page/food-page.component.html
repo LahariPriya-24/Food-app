@@ -1,6 +1,6 @@
 
 
-<div class="container">
+<div class="container-fluid">
     <img [src]="food.imageUrl" [alt]="food.name" />
     <div class="details">
         <div class="header">
@@ -29,6 +29,6 @@
             {{food.price | currency}}
         </span>
         </div>
-        <button (click)="addToCart()">Add to cart</button>
+        <button class="button" (click)="addToCart()">Add to cart</button>
     </div>
 </div>
